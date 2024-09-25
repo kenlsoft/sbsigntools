@@ -1,3 +1,20 @@
+======================================================================
+
+  - This repo fixes build errors when build with gnu tools. Other
+    toolchains are not tested.
+  - After clone, use 'git submodule update --init' to get submodule
+    ccan. The original submodule pointing to git.linux.org might not
+    be cloned successfully, hence we uses github url instead.
+    Also, a forked version exists under my github space.
+  - Then use autogen.sh and configure and make to build it. Please
+    install dependencies when configure error reported.
+
+This repo is initially cloned from:
+git://git.kernel.org/pub/scm/linux/kernel/git/jejb/sbsigntools.git
+
+Original README content:
+======================================================================
+
 sbsigntool - Signing utility for UEFI secure boot
 
   Copyright (C) 2102 Jeremy Kerr <jeremy.kerr@canonical.com>
