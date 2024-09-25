@@ -1,6 +1,6 @@
 AC_INIT([sbsigntool], [0.9.5], [James.Bottomley@HansenPartnership.com])
 
-AM_INIT_AUTOMAKE()
+AM_INIT_AUTOMAKE([gnu subdir-objects])
 
 AC_PREREQ(2.60)
 

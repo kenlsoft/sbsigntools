@@ -14,6 +14,7 @@ if [ ! -e lib/ccan ]
 then
 	lib/ccan.git/tools/create-ccan-tree \
 		--build-type=automake lib/ccan $ccan_modules
+	cp lib/ccan.git/ccan/* lib/ccan/ccan/ -r
 fi
 
 # Create generatable docs from git
